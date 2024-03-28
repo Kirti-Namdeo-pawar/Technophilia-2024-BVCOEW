@@ -1,0 +1,146 @@
+/* General Styles */
+.navbar {
+    background-color: #01060c; /* Dark background color */
+    padding: 10px 20px; /* Adjust padding as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    position: relative; /* Fixed position to stick to the top */
+    width: 100%;
+    z-index: 999; /* Ensure it's above other elements */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Align items */
+    align-items: center; /* Center items vertically */
+  }
+
+  /* Navbar links */
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 15px; /* Adjust spacing between links */
+    transition: color 0.3s; /* Add transition for color change */
+  }
+
+  /* Hover effect for navbar links */
+  .navbar a:hover {
+    color: #ffa500; /* Change color on hover */
+  }
+
+  /* Logo styles */
+  .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto; /* Push logo to the left */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing for a stylish look */
+    font-family: 'Arial', sans-serif; /* Use a fallback font */
+  }
+
+  /* Add some font effects */
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #8e9eab, #eef2f3); /* Background gradient */
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo-container img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+}
+
+.logo-container h1 {
+    margin: 10px 0 0;
+    font-size: 24px;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.event-section {
+    margin-bottom: 30px;
+}
+
+.event {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition effect */
+}
+
+.event:hover {
+    transform: scale(1.05); /* Zoom out effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+.event h3 {
+    color: #007bff;
+    margin-top: 0;
+    text-align: center;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .logo-container img {
+        width: 80px; /* Adjust size as needed */
+    }
+
+    .logo-container h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,326 @@
+.navbar {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Completely transparent background color */
+  /* Add background color with some transparency */
+  position: fixed; /* Fixed position to keep it at the top */
+  top: 0;
+  left: 0;
+  right: 0;
+  
+  z-index: 999; /* Ensure it's above other elements */
+  display: flex;
+  justify-content: flex-end; /* Align navbar items to the right */
+  align-items: center;
+  padding: 10px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);/* Add a subtle shadow */
+}
+
+.bgimage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url("Blue Futuristic Technology Presentation (1).png");
+ 
+  z-index: 0; /* Ensure the background image is behind other elements */
+}
+
+
+.logo {
+  width: 120px; /* Adjust the logo width */
+  cursor: pointer;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 30px; /* Add spacing between nav items */
+}
+.link {
+  color: rgb(248 248 248);
+  font-family:  'Roboto Mono', monospace; 
+  font-weight: 300;
+  font-size: 20px;
+  transition: 0.3s; 
+  text-decoration: none;
+  padding:0.5cm;
+  margin-top: 3cm;
+}
+
+#head-line {
+  text-align: center; /* Keep the text centered */
+  margin-left: 50%;
+  font-size: 55px; /* Adjust the value as needed */
+}
+
+
+.navbar ul li a:hover {
+  color: #3498db;
+  text-decoration: none; /* Change color on hover */
+}
+
+
+/* Styling for the Earth element */
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+  position: relative; 
+  justify-content: center;
+  align-items: center;
+  margin-left:85vh;
+  margin-top: 23%;
+  margin-bottom: 30vh;
+  display: flex;
+ 
+  background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+animation: rotateCircle 10s linear infinite; 
+}
+body{
+  background-size: cover;
+background-repeat: no-repeat;
+background-position: center center;
+background-color: rgba(255, 255, 255, 0);
+transition: background-image 10s ease-in-out;
+
+
+}
+.circle h1{
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  font-style: italic;
+  font-family: fantasy;
+}
+
+.butn {
+  width: 50px; 
+  height: 50px;
+  border-radius: 50%; 
+  background-color: #3498db;
+  color: #fff; 
+  border: none;
+  cursor: pointer; 
+  outline: none; 
+  position: absolute; 
+ 
+}
+
+@keyframes rotateCircle {
+  0% {
+      transform: rotate(0deg);
+  }
+ 
+  50% {
+      transform: rotate(20deg); /* Right side rotation */
+  }
+  
+  100% {
+      transform: rotate(-20deg); /* Left side rotation */
+  }
+}
+
+
+
+.sparkling {
+  animation: sparkling 1s linear infinite;
+}
+
+/* Keyframes for the sparkling animation */
+@keyframes sparkling {
+  0% {
+    box-shadow: 0 0 5px blue;
+  }
+  50% {
+    box-shadow: 0 0 20px blue, 0 0 15px deepskyblue, 0 0 25px lightblue;
+  }
+  100% {
+    box-shadow: 0 0 5px blue;
+  }
+}
+
+
+
+/* Position buttons in the corners */
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+
+.searchBar {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 3rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.8rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+}
+#head-line{
+ color: gold; 
+ font-size:18px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  margin-top: 60px;
+ margin-right: 250px;
+  margin-left:200px;
+}
+#head{
+ 
+  
+  font-family:  'Roboto Mono', monospace; 
+  font-weight: 300;
+  font-size: 50px; /* Adjust font size as needed */
+  color: #00f7ff;
+  margin-left:500px;
+  text-transform: uppercase; /* Uppercase for added emphasis */
+  letter-spacing: 2px; /* Adjust letter spacing for a more spaced-out look */
+  text-shadow: 2px 2px 4px rgba(223, 229, 236, 0.5); 
+}
+
+
+.thought::after{
+  content: '';
+  animation: differ 10s infinite linear;
+  color: azure;
+}
+
+@keyframes differ{
+  0%{content:"Within the circuits of innovation and the rhythms of culture, our events weave a tapestry where technology and creativity harmonize, creating a vibrant celebration of intellect and expression. 🌐🎨💡";color:yellow}
+  20%{content:"Empowering Tomorrow, Today: Embrace Technology! ";color: orange;}
+  35%{content:" Tech Beyond Limits: Explore, Create, Conquer!";color: purple;}
+  60%{content:" Tech for Change: Shaping a Brighter Future!";color: red;}
+  80%{content:" Be a rainbow in someone else’s cloud!";color:magenta;}
+  100%{content:"Empower through Technology: Shape Tomorrow Today! ";color: gray;}
+}
+
+@media screen and (max-width: 768px) {
+  body {
+      font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .navbar ul li {
+      margin: 0 15px; /* Reduce margin for smaller screens */
+  }
+  
+  /* Make buttons responsive */
+  .butn {
+      width: 10vw; /* Adjust button width relative to viewport width */
+      height: 10vw; /* Adjust button height relative to viewport width */
+  }
+  
+}
+
+#quote-card {
+max-width: 300px;
+padding: 20px;
+background-color: #fff;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+visibility: hidden;/* Initially hide the quote card */
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 768px) {
+    
+  #head{
+      font-family:  'Roboto Mono', monospace; 
+      font-weight: 150;
+      font-size: 40px; /* Adjust font size as needed */
+      color: #00f7ff;
+      text-align: center;
+      justify-content: center;
+      margin-left: 30%;
+      margin-right: 70%;
+      text-transform: uppercase; /* Uppercase for added emphasis */
+      letter-spacing: 2px; /* Adjust letter spacing for a more spaced-out look */
+      text-shadow: 2px 2px 4px rgba(223, 229, 236, 0.5); 
+    }
+  #headline{
+      font-size:11px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-style: italic;
+      font-weight: 90;
+      margin-top: 60px;
+     margin-right: 250px;
+      margin-left:200px;
+  }
+  .circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    position: relative; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 95%;
+    margin-top: 60%;
+    margin-bottom: 30vh;
+    display: flex;
+   
+    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  animation: rotateCircle 10s linear infinite; 
+  }
+  
+}

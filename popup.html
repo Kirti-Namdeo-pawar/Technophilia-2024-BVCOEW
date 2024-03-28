@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment and Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<button onclick="showPopup()">Click to Register</button>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <h2>Payment Instructions</h2>
+    <p>Please complete the payment process by scanning the QR code or using the provided link. Make sure to take a screenshot of your payment for further registration form filling.</p>
+    <img src="QRimage.jpeg" alt="QR Code for Payment">
+    <p>Payment Link: <a href="payment_link_here">Payment Link</a></p>
+    <hr>
+    <p>After payment, proceed with registration:</p>
+    <a href="registration_form_link_here" class="registration-btn">Register Now</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

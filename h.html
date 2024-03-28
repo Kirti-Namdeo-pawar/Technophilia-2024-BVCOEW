@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Curtain Opening Effect</title>
+ <style>
+  
+  body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.curtain-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: royalblue; /* Royal blue color */
+  animation: open-curtain 3s ease forwards; /* Animation to open the curtain */
+}
+
+.curtain::before,
+.curtain::after {
+  content: '';
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: royalblue; /* Royal blue color */
+}
+
+.curtain::before {
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(10deg);
+}
+
+.curtain::after {
+  right: 0;
+  transform-origin: top left;
+  transform: skewY(-10deg);
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  opacity: 0; /* Initially hide the content */
+  animation: fade-in 3s ease forwards 3s; /* Fade in after 3 seconds */
+}
+
+@keyframes open-curtain {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+ </style>
+</head>
+<body>
+  <div class="curtain-container">
+    <div class="curtain"></div>
+    <div class="content">
+      <!-- Your content goes here -->
+      <h1>Welcome to Our Presentation</h1>
+      <p>This is where we present something...</p>
+    </div>
+  </div>
+</body>
+</html>
